@@ -1,0 +1,1 @@
+Chakra UI para copiar componentes

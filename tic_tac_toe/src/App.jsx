@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import Confetti from 'react-confetti'
 
 import { Square } from '../src/components/Square'
 import { TURNS } from "./constants/constants.js"
@@ -56,6 +57,7 @@ function App() {
   
   return (
     <main className="board">
+       {winner && <Confetti />}
       <h1>Tic tac toe</h1>
       <button onClick={resetGame}>Reset del juego</button>
       <section className="game">

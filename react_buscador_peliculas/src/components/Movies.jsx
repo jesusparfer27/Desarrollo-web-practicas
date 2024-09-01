@@ -17,6 +17,7 @@ function ListOfMovies({ movies }) {
 }
 
 export function NoMoviesResults() {
+    const {movies, loading, getMovies} = useMovies({search})
     return (
         <p>No se encontraron películas para esta búsqueda</p>
     )
